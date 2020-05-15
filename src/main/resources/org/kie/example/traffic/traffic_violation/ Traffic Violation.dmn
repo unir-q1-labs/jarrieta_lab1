@@ -1,6 +1,31 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <dmn:definitions xmlns:dmn="http://www.omg.org/spec/DMN/20180521/MODEL/" xmlns="https://kiegroup.org/dmn/_54930E57-1B84-4B8E-908E-DE61B53F4088" xmlns:di="http://www.omg.org/spec/DMN/20180521/DI/" xmlns:kie="http://www.drools.org/kie/dmn/1.2" xmlns:feel="http://www.omg.org/spec/DMN/20180521/FEEL/" xmlns:dmndi="http://www.omg.org/spec/DMN/20180521/DMNDI/" xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" id="_84D1DBBC-E9F4-4D00-B423-14AC68814CD1" name=" Traffic Violation" expressionLanguage="http://www.omg.org/spec/DMN/20180521/FEEL/" typeLanguage="http://www.omg.org/spec/DMN/20180521/FEEL/" namespace="https://kiegroup.org/dmn/_54930E57-1B84-4B8E-908E-DE61B53F4088">
   <dmn:extensionElements/>
+  <dmn:itemDefinition id="_A9DFE7F5-6AD1-4274-878C-CD59A9A576FE" name="tDriver" isCollection="false">
+    <dmn:itemComponent id="_311A0D64-915B-477F-B697-785724CE1AD7" name="Points" isCollection="false">
+      <dmn:typeRef>number</dmn:typeRef>
+    </dmn:itemComponent>
+    <dmn:itemComponent id="_3F9F382A-F59C-4883-AEC3-012F4616BE1B" name="State" isCollection="false">
+      <dmn:typeRef>string</dmn:typeRef>
+    </dmn:itemComponent>
+    <dmn:itemComponent id="_BC5A5B66-FED6-4A7F-A52A-3F8E7EFB07AF" name="City" isCollection="false">
+      <dmn:typeRef>string</dmn:typeRef>
+    </dmn:itemComponent>
+    <dmn:itemComponent id="_0C68059D-3C88-4A8F-9C48-F4FE9A119995" name="Name" isCollection="false">
+      <dmn:typeRef>string</dmn:typeRef>
+    </dmn:itemComponent>
+    <dmn:itemComponent id="_06F214C9-C6E3-4E8E-A002-3227DFD98551" name="Age" isCollection="false">
+      <dmn:typeRef>number</dmn:typeRef>
+    </dmn:itemComponent>
+  </dmn:itemDefinition>
+  <dmn:itemDefinition id="_D642E8F6-9356-4678-9D01-6EE117FBA1A8" name="tViolation" isCollection="false">
+    <dmn:itemComponent id="_D361F4C9-B7C1-47C0-87C7-F2BB0AC89712" name="Date" isCollection="false">
+      <dmn:typeRef>date</dmn:typeRef>
+    </dmn:itemComponent>
+    <dmn:itemComponent id="_72FC31EA-E7A8-45A0-A179-7FE25D41F448" name="Code" isCollection="false">
+      <dmn:typeRef>string</dmn:typeRef>
+    </dmn:itemComponent>
+  </dmn:itemDefinition>
   <dmn:decision id="_70C0F47C-0ACE-49A2-AE7C-249046510BA3" name="Should the driver be suspended?">
     <dmn:extensionElements/>
     <dmn:variable id="_7BD83796-4CA9-4682-9FDA-B93252CA9CE5" name="Should the driver be suspended?"/>
@@ -34,15 +59,6 @@
         <dc:Bounds x="425" y="63" width="100" height="50"/>
         <dmndi:DMNLabel/>
       </dmndi:DMNShape>
-      <dmndi:DMNShape id="dmnshape-_9D895CF6-D9A5-4E60-9788-5D60EB241E53" dmnElementRef="_9D895CF6-D9A5-4E60-9788-5D60EB241E53" isCollapsed="false">
-        <dmndi:DMNStyle>
-          <dmndi:FillColor red="255" green="255" blue="255"/>
-          <dmndi:StrokeColor red="0" green="0" blue="0"/>
-          <dmndi:FontColor red="0" green="0" blue="0"/>
-        </dmndi:DMNStyle>
-        <dc:Bounds x="281" y="289" width="100" height="50"/>
-        <dmndi:DMNLabel/>
-      </dmndi:DMNShape>
       <dmndi:DMNShape id="dmnshape-_5F48911C-802D-4F03-984C-ACDD7E89383F" dmnElementRef="_5F48911C-802D-4F03-984C-ACDD7E89383F" isCollapsed="false">
         <dmndi:DMNStyle>
           <dmndi:FillColor red="255" green="255" blue="255"/>
@@ -50,6 +66,15 @@
           <dmndi:FontColor red="0" green="0" blue="0"/>
         </dmndi:DMNStyle>
         <dc:Bounds x="597" y="155" width="100" height="50"/>
+        <dmndi:DMNLabel/>
+      </dmndi:DMNShape>
+      <dmndi:DMNShape id="dmnshape-_9D895CF6-D9A5-4E60-9788-5D60EB241E53" dmnElementRef="_9D895CF6-D9A5-4E60-9788-5D60EB241E53" isCollapsed="false">
+        <dmndi:DMNStyle>
+          <dmndi:FillColor red="255" green="255" blue="255"/>
+          <dmndi:StrokeColor red="0" green="0" blue="0"/>
+          <dmndi:FontColor red="0" green="0" blue="0"/>
+        </dmndi:DMNStyle>
+        <dc:Bounds x="281" y="289" width="100" height="50"/>
         <dmndi:DMNLabel/>
       </dmndi:DMNShape>
       <dmndi:DMNShape id="dmnshape-_5A54370E-197E-4BE9-8A24-315C124FF336" dmnElementRef="_5A54370E-197E-4BE9-8A24-315C124FF336" isCollapsed="false">
