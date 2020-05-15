@@ -61,6 +61,30 @@
     <dmn:informationRequirement id="_E2D17A05-5784-48BD-B224-8DDC11C10A9B">
       <dmn:requiredInput href="#_5A54370E-197E-4BE9-8A24-315C124FF336"/>
     </dmn:informationRequirement>
+    <dmn:decisionTable id="_20A9F67A-0BD4-4E8B-8035-00FBC3CAA3FD" hitPolicy="UNIQUE" preferredOrientation="Rule-as-Row">
+      <dmn:input id="_20D481DC-2CBC-4CBA-9E20-D04FA920B656">
+        <dmn:inputExpression id="_C6781D87-181E-4300-8C53-B0E0EF073BCE" typeRef="number">
+          <dmn:text>Violation.Actual Speed - Violation.Speed Limit</dmn:text>
+        </dmn:inputExpression>
+      </dmn:input>
+      <dmn:input id="_656912B3-62A4-4141-9CA7-65603DADAC35">
+        <dmn:inputExpression id="_7ABF526D-A200-472A-A483-E227315945E9" typeRef="string">
+          <dmn:text>Violation.Type</dmn:text>
+        </dmn:inputExpression>
+      </dmn:input>
+      <dmn:output id="_7F606A42-4030-4BEF-8821-0F63A9AE83A4" typeRef="tFine"/>
+      <dmn:rule id="_D60DFBBC-7716-4670-978F-1DB4B72DB5BC">
+        <dmn:inputEntry id="_F7441CB0-6400-4774-BAF4-EBBF1EB6DA86">
+          <dmn:text>-</dmn:text>
+        </dmn:inputEntry>
+        <dmn:inputEntry id="_3E21FAAE-1A4B-4A8D-8EED-03A8BC6D4B35">
+          <dmn:text>-</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_5C5A08C5-FB0F-44B9-93C8-53FAFA7E4EE2">
+          <dmn:text></dmn:text>
+        </dmn:outputEntry>
+      </dmn:rule>
+    </dmn:decisionTable>
   </dmn:decision>
   <dmn:inputData id="_9D895CF6-D9A5-4E60-9788-5D60EB241E53" name="Driver">
     <dmn:extensionElements/>
@@ -73,7 +97,15 @@
   <dmndi:DMNDI>
     <dmndi:DMNDiagram>
       <di:extension>
-        <kie:ComponentsWidthsExtension/>
+        <kie:ComponentsWidthsExtension>
+          <kie:ComponentWidths dmnElementRef="_20A9F67A-0BD4-4E8B-8035-00FBC3CAA3FD">
+            <kie:width>50.0</kie:width>
+            <kie:width>338.0</kie:width>
+            <kie:width>182.0</kie:width>
+            <kie:width>196.0</kie:width>
+            <kie:width>260.0</kie:width>
+          </kie:ComponentWidths>
+        </kie:ComponentsWidthsExtension>
       </di:extension>
       <dmndi:DMNShape id="dmnshape-_70C0F47C-0ACE-49A2-AE7C-249046510BA3" dmnElementRef="_70C0F47C-0ACE-49A2-AE7C-249046510BA3" isCollapsed="false">
         <dmndi:DMNStyle>
