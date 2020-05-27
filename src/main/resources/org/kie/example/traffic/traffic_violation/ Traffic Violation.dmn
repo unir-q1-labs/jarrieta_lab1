@@ -79,7 +79,7 @@
           <dmn:text>[10..30)</dmn:text>
         </dmn:inputEntry>
         <dmn:inputEntry id="_3E21FAAE-1A4B-4A8D-8EED-03A8BC6D4B35">
-          <dmn:text>"speed"</dmn:text>
+          <dmn:text>"Speed"</dmn:text>
         </dmn:inputEntry>
         <dmn:outputEntry id="_8E94295D-04B4-432C-8121-55A72BC51EF9">
           <dmn:text>500</dmn:text>
@@ -93,7 +93,7 @@
           <dmn:text>&gt;=30</dmn:text>
         </dmn:inputEntry>
         <dmn:inputEntry id="_0344A881-6E78-4A28-8B53-573AD2D4FF42">
-          <dmn:text>"speed"</dmn:text>
+          <dmn:text>"Speed"</dmn:text>
         </dmn:inputEntry>
         <dmn:outputEntry id="_173D07D0-FC64-484F-A0F1-7149EA671E84">
           <dmn:text>1000</dmn:text>
@@ -107,7 +107,7 @@
           <dmn:text>-</dmn:text>
         </dmn:inputEntry>
         <dmn:inputEntry id="_A7EF8B9F-CAA0-4752-B609-45976DD75892">
-          <dmn:text>"parking"</dmn:text>
+          <dmn:text>"Parking"</dmn:text>
         </dmn:inputEntry>
         <dmn:outputEntry id="_7898DC08-9D9B-40BC-816C-C6AE663B9BB6">
           <dmn:text>100</dmn:text>
@@ -121,7 +121,7 @@
           <dmn:text>-</dmn:text>
         </dmn:inputEntry>
         <dmn:inputEntry id="_99374EFE-F0FC-45CD-9AB4-1D379562F91A">
-          <dmn:text>"driver under the influence"</dmn:text>
+          <dmn:text>"Driver under the influence"</dmn:text>
         </dmn:inputEntry>
         <dmn:outputEntry id="_CC42102E-A764-4498-A08F-4F7304847E9F">
           <dmn:text>1000</dmn:text>
